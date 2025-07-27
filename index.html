@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn's Bimmers | NYC Key & Module Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .car-outline {
+            filter: drop-shadow(0 0 10px rgba(56, 182, 255, 0.5));
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-microchip text-blue-400 text-xl"></i>
+                <span class="text-xl font-bold">Brooklyn's <span class="text-blue-400">Bimmers</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link hover:text-blue-400 transition">Home</a>
+                <a href="#services" class="nav-link hover:text-blue-400 transition">Services</a>
+                <a href="#about" class="nav-link hover:text-blue-400 transition">About</a>
+                <a href="#faq" class="nav-link hover:text-blue-400 transition">FAQ</a>
+                <a href="#contact" class="nav-link hover:text-blue-400 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 px-4 py-2">
+            <a href="#home" class="block py-2 hover:text-blue-400 transition">Home</a>
+            <a href="#services" class="block py-2 hover:text-blue-400 transition">Services</a>
+            <a href="#about" class="block py-2 hover:text-blue-400 transition">About</a>
+            <a href="#faq" class="block py-2 hover:text-blue-400 transition">FAQ</a>
+            <a href="#contact" class="block py-2 hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">NYC's Trusted <span class="text-blue-400">Bimmer</span> Key & Module Expert</h1>
+                <p class="text-xl mb-8 text-gray-300">Professional key programming, module replacement, and performance tuning for your vehicle.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition text-center">Contact Us</a>
+                    <a href="#appointment" class="bg-transparent border-2 border-blue-400 hover:bg-blue-400/10 text-white px-6 py-3 rounded-lg font-medium transition text-center">Book Appointment</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="BMW M4" class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-blue-500">Services</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive solutions for all your Bimmer key and electronic needs</p>
+            </div>
+            
+            
+                    </div>
+                </div>
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-key fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Key Services</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Spare key duplication</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Lost key replacement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Key fob & remote programming</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-microchip fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Module Programming</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>ECU, DME, CAS, FEM, BDC</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Push-to-start activation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Steering wheel unlock</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-tachometer-alt fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Performance & Diagnostics</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Coding & diagnostics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Mileage reset & startup sync</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Performance tuning & remapping</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-car fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Mobile Service</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>We come to your location</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Emergency lockout service</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>After-hours service available</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-lock fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Security Solutions</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Anti-theft system installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Keyless entry programming</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Immobilizer bypass</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-cogs fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Custom Solutions</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Feature activation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Software updates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                            <span>Vehicle personalization</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h2 class="text-3xl font-bold mb-6">About <span class="text-blue-500">Brooklyn's Bimmers</span></h2>
+                    <p class="text-gray-700 mb-4">
+                        We are a local NYC-based Bimmer programming service specializing in modern vehicle electronics and keys. 
+                        Our mission is to provide dealership-quality service at a fraction of the price, with the convenience of 
+                        mobile service throughout the New York City area.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        With years of experience working exclusively with Bimmers, we understand the unique challenges these 
+                        vehicles present when it comes to keys and electronic modules. Our technicians are equipped with 
+                        the latest tools and software to handle even the most complex programming tasks.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        We pride ourselves on fast, honest, and affordable solutions. Whether you need a simple key duplicate 
+                        or complex module programming, we've got you covered with the same precision as the dealership 
+                        without the dealership prices.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                            <div class="text-2xl font-bold">100+</div>
+                            <div class="text-sm">Vehicles Serviced</div>
+                        </div>
+                        <div class="bg-gray-800 text-white px-4 py-2 rounded-lg">
+                            <div class="text-2xl font-bold">Overtime </div>
+                            <div class="text-sm">Emergency Service</div>
+                        </div>
+                        <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                            <div class="text-2xl font-bold">High </div>
+                            <div class="text-sm">Customer Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="BMW interior and key" class="rounded-lg mb-4 w-full">
+                        <div class="flex items-center space-x-4 mb-4">
+                            
+                                <h4 
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Quality Service</h4>
+                                <p class="text-gray-600 text-sm">Professional service with OEM diagnostic equipment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Book an <span class="text-blue-400">Appointment</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Fill out the form below and we'll contact you to confirm your appointment</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto bg-gray-800 rounded-xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-600 p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-4">Ready to Service Your Bimmer?</h3>
+                        <p class="mb-6">We typically respond within 1 business hour to confirm your appointment.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-phone-alt mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Call Us Directly</h4>
+                                    <a href="tel:9176765567" class="hover:underline">(917) 676-5567</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-envelope mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email Us</h4>
+                                    <a href="mailto:adnanelrowmeim100@gmail.com" class="hover:underline">adnanelrowmeim100@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-clock mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Service Hours</h4>
+                                    <p>Mon-Sun: 8AM - 9PM<br>Emergency: 24/7</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <form id="appointmentForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-1">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium mb-1">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="vehicle" class="block text-sm font-medium mb-1">Vehicle Year & Model *</label>
+                                <input type="text" id="vehicle" name="vehicle" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none" placeholder="e.g., 2018 340i">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium mb-1">Service Needed *</label>
+                                <select id="service" name="service" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none">
+                                    <option value="">Select a service</option>
+                                    <option value="Key Duplication">Key Duplication</option>
+                                    <option value="Lost Key Replacement">Lost Key Replacement</option>
+                                    <option value="Key Fob Programming">Key Fob Programming</option>
+                                    <option value="Module Programming">Module Programming</option>
+                                    <option value="Push-to-Start Activation">Push-to-Start Activation</option>
+                                    <option value="Performance Tuning">Performance Tuning</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-1">Additional Details</label>
+                                <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+                                Request Appointment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked <span class="text-blue-500">Questions</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Answers to common questions about our services</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium">Do you come to my location?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">
+                            Yes! We offer mobile service throughout the NYC area. A travel fee may apply depending on your location. 
+                            Our technician will come fully equipped with all necessary tools to perform the service at your home, 
+                            office, or wherever your vehicle is located.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium">What if I've lost all my keys?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">
+                            No problem! We specialize in lost key situations. We can program new keys even if you don't have any 
+                            working keys left. This process requires accessing your vehicle's computer system to program new keys 
+                            from scratch. The exact procedure depends on your specific model and year.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium">What's the price range for your services?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">
+                            Prices vary depending on the service and your specific vehicle model. Generally:
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>Key duplication and key fob programing: $280 (linked with key fob programming)</li>
+                                <li>Lost key replacement and lockout support aswell as key fob programing : $400</li>
+                    
+                                <li>Module programming: $200-$600</li>
+                            </ul>
+                            Contact us for an exact quote for your situation. We're typically 30-50% less than dealership prices.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium">How long does the service take?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">
+                            Most services are completed within 30-90 minutes on site. Complex module programming may take 2-3 hours. 
+                            When you book your appointment, we'll give you a more accurate time estimate based on your specific needs.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <span class="text-lg font-medium">Is this safe for my car?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">
+                            Absolutely. We use professional-grade equipment and follow manufacturer procedures. All programming 
+                            is done through the vehicle's OBD port without any physical modification to your car's wiring or 
+                            components. We've performed hundreds of successful programming jobs with zero issues.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact <span class="text-blue-400">Us</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Get in touch for questions or to schedule your service</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Contact Card 1 -->
+                <div class="bg-gray-700 rounded-xl p-6 shadow-lg">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-phone-alt fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Call Us</h3>
+                    <p class="text-gray-300 mb-4">Speak directly with our technician</p>
+                    <a href="tel:9176765567" class="text-blue-400 hover:underline text-lg font-medium">(917) 676-5567</a>
+                </div>
+                
+                <!-- Contact Card 2 -->
+                <div class="bg-gray-700 rounded-xl p-6 shadow-lg">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+                    <p class="text-gray-300 mb-4">Send us your questions or service requests</p>
+                    <a href="mailto:adnanelrowmeim100@gmail.com" class="text-blue-400 hover:underline">adnanelrowmeim100@gmail.com</a>
+                </div>
+                
+                <!-- Contact Card 3 -->
+                <div class="bg-gray-700 rounded-xl p-6 shadow-lg">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Service Area</h3>
+                    <p class="text-gray-300 mb-4">We cover all of New York City</p>
+                    <p>Brooklyn • Manhattan • Queens • Bronx • Staten Island</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-microchip text-blue-400 text-xl"></i>
+                        <span class="text-xl font-bold">Brooklyn's <span class="text-blue-400">Bimmers</span></span>
+                    </div>
+                    <p class="mt-2 text-gray-400">NYC's trusted Bimmer key & module expert</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                    <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Brooklyn's Bimmers. All rights reserved.</p>
+                <p class="mt-2 text-sm">Professional automotive services for Bimmer vehicles.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('transform', 'rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.classList.add('transform', 'rotate-180');
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const vehicle = document.getElementById('vehicle').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Create SMS and email content
+            const smsBody = `New Appointment Request:%0A%0AName: ${name}%0APhone: ${phone}%0AVehicle: ${vehicle}%0AService: ${service}%0AMessage: ${message}`;
+            const emailBody = `New Appointment Request:\n\nName: ${name}\nPhone: ${phone}\nVehicle: ${vehicle}\nService: ${service}\nMessage: ${message}`;
+            
+            // Send SMS (would need proper SMS gateway in production)
+            window.open(`sms:9176765567?body=${smsBody}`, '_blank');
+            
+            // Send email (would need proper form handler in production)
+            window.open(`mailto:adnanelrowmeim100@gmail.com?subject=Appointment Request&body=${encodeURIComponent(emailBody)}`, '_blank');
+            
+            // Show success message
+            alert('Thank you! Your appointment request has been sent. We will contact you shortly to confirm.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
